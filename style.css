@@ -1,0 +1,54 @@
+body{
+background-image: url(assets/fundo.svg);
+background-size: 100% ;
+}
+
+.grid{
+  margin-top: 303px; 
+  margin-right: 180px;
+  margin-left: 396px;
+  
+  position: relative;
+
+  display: grid;
+  grid-template-areas: 
+  "a b c d"
+  "a b c d"
+  "a b c d";
+}
+
+.hole{
+  width: 222px;
+  height: 172px;
+  background-image: url(assets/toupeira6.svg);
+
+}
+
+.hole:hover{
+  animation-name: movement;
+  animation-duration: 0.3s;
+  animation-timing-function:ease-in-out;
+  
+}
+
+@keyframes movement{
+  0%{
+    background-image: url(assets/toupeira1.svg);
+    
+  }
+  25%{
+    background-image: url(assets/toupeira2.svg);
+    
+  }
+  50%{
+    background-image: url(assets/toupeira3.svg);
+  }
+  75%{
+    background-image: url(assets/toupeira4.svg);
+    
+  }
+  100%{
+    background-image: url(assets/toupeira5.svg);
+    
+  }
+}
